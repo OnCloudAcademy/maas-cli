@@ -23,5 +23,6 @@ def run_terraform(project_name, location, subscription_id):
         "terraform", "apply",
         "-auto-approve",
         f"-var=project_name={project_name}",
-        f"-var=location={location}"
+        f"-var=location={location}",
+        f"-var=subscription_id={subscription_id}"
     ], check=True)
