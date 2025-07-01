@@ -6,7 +6,7 @@ import shutil
 TEMPLATE_REPO = "https://github.com/OnCloudAcademy/common-infra-template.git"
 TEMPLATE_DIR = "common-infra-template"
 
-def run_terraform(project_name, location, subscription_id):
+def run_terraform(project_name, location, subscription_id, github_token, github_org):
     # Clone repo
     if os.path.exists(TEMPLATE_DIR):
         shutil.rmtree(TEMPLATE_DIR)
