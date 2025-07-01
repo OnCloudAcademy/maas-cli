@@ -24,5 +24,7 @@ def run_terraform(project_name, location, subscription_id):
         "-auto-approve",
         f"-var=project_name={project_name}",
         f"-var=location={location}",
-        f"-var=subscription_id={subscription_id}"
+        f"-var=subscription_id={subscription_id}",
+        f"-var=github_token={github_token}",
+        f"-var=github_org={github_org}"
     ], check=True)
