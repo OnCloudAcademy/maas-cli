@@ -3,7 +3,7 @@ import subprocess
 import os
 import shutil
 
-TEMPLATE_REPO = "https://github.com/YOUR_ORG/common-infra-template.git"
+TEMPLATE_REPO = "https://github.com/rajams/common-infra-template.git"
 TEMPLATE_DIR = "common-infra-template"
 
 def run_terraform(project_name, location, subscription_id):
